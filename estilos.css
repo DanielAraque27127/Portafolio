@@ -3,6 +3,42 @@
   padding: 0;
   box-sizing: border-box;
 }
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 0.8s linear infinite;
+}
+.loader {
+  background-color: #000000;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  left: 0;
+  clip-path: circle(150% at 100% 0%);
+  transition: clip-path 2s ease-in-out;
+
+}
+
+.loader2 {
+  clip-path: circle(0% at 100% 100%);
+}
 
 header {
   width: 100%;
@@ -473,39 +509,3 @@ input[type="submit"] {
 }
 
 
-.lds-dual-ring {
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-}
-
-.lds-dual-ring:after {
-  content: " ";
-  display: block;
-  width: 64px;
-  height: 64px;
-  margin: 8px;
-  border-radius: 50%;
-  border: 6px solid #fff;
-  border-color: #fff transparent #fff transparent;
-  animation: lds-dual-ring 0.8s linear infinite;
-}
-.loader {
-  background-color: #000000;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  z-index: 100000;
-  top: 0;
-  left: 0;
-  clip-path: circle(150% at 100% 0%);
-  transition: clip-path 2s ease-in-out;
-
-}
-
-.loader2 {
-  clip-path: circle(0% at 100% 100%);
-}
