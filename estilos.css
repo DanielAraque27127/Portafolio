@@ -571,3 +571,10 @@ input[type="submit"] {
     transform: rotate(360deg);
   }
 }
+.imgRedonda {
+  width: 300px;
+  height: 300px;
+  border-radius: 700px;
+  margin: 10px;
+
+}
